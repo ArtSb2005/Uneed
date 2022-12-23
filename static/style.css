@@ -85,3 +85,12 @@ a {
 	font-size: 13px;
 	font-family: 'Montserrat', sans-serif;
 }
+
+.img_prod {
+	width: 100%;
+	display: block;
+      margin: 0 auto;
+}
+.list-prod {
+	padding: 50px;
+}
