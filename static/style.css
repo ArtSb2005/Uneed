@@ -6,6 +6,10 @@ body {
 	background: var(--tg-theme-bg-color);
 }
 
+a {
+	font-family: 'Montserrat', sans-serif;
+}
+
 .container {
 	max-width: 390px;
 
@@ -52,21 +56,12 @@ a {
 
 .item:hover {border:none;}
 
-.btn {
-	display: inline-block;
-	padding: 10px 20px;
-	border: none;
-	background: rgb(248, 168, 24);
-	border-radius: 10px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-
-	transition: background .2s linear;
-}
-
-.btn:hover {
-	background: lightgreen;
+.icons-basket-wrapper {
+	border: 1px solid rgba(158, 158, 158, 0.3);
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+	float: right;
 }
 
 .usercard {
@@ -86,11 +81,106 @@ a {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.item-stock {
+	margin-top: 5px;
+}
+
+.item-stock .icon {
+    width: 5px;
+    height: 5px;
+    background: #5fa800;
+    margin: 6px 0px 0 0;
+    border-radius: 100%;
+}
+
+.item-stock>span {
+    display: inline-block;
+    vertical-align: top;
+    color: #5fa800;
+    line-height: 15px;
+	font-size: 14px;
+}
+
+
 .img_prod {
+	padding-top: 20px;
 	width: 100%;
 	display: block;
       margin: 0 auto;
 }
-.list-prod {
-	padding: 50px;
+.item_box {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.item_title {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.svg {
+    width: 38px;
+    height: 38px;
+    line-height: 37px;
+    top: 0px;
+    background: none;
+    margin: 0px;
+}
+
+.item_price {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.ellipse {
+  border: 1px solid rgb(153, 153, 153, 0.5);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+
+.svg path{
+	fill: #999;
+}
+
+.button_block {
+	width: 37px;
+	display: inline;
+	height: 37px;
+}
+
+.btn-exlg {
+	position: relative;
+   top: 7%;
+   left: 18%;
+   transform: translate(-20%, -20%);
+}
+
+.list_values_wrapper {
+	padding: 0;
+}
+
+.list_values_wrapper li {
+	display: inline-block;
+	border: 1px solid #dddddd;
+	padding: 4px!important;
+}
+
+.item_info {
+	height: 37px;
+}
+
+
+.active {
+	border-color: #000000;
+	color: #FFF;
+    background: #000000;
+}
+.cnt {
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.add_item {
+	opacity: 10;
 }

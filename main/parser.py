@@ -31,7 +31,7 @@ class Pars():
         soup = BeautifulSoup(response.text, 'lxml')
         for i in soup.find_all('div', class_='catalog-block-view__item'):
             img = 'uneed.ru' + i.find_all('img', class_='img-responsive')[0]['data-src']
-            color = i.find_all('div', class_='color_in_list')
+            color = ''
             title = i.find('a', class_='dark_link').text
             url = i.find('a', class_='dark_link')['href']
             nal = i.find('span', class_='value').text
@@ -40,6 +40,7 @@ class Pars():
                 price+=i.find('span', class_='price_value').text
             except:
                 pass
+            color += i.find('span', class_='cnt').text
 
             try:
                 obj = Products.objects.get(url=url)
